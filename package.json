@@ -1,0 +1,25 @@
+{
+  "name": "diff-file",
+  "version": "1.0.0",
+  "description": "get linux diff file results",
+  "main": "index.js",
+  "repository": "git@github.com:BigMurry/diff-file.git",
+  "author": "BigMurry <hhdiao@siom.ac.cn>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "semistandard | snazzy",
+    "unit": "tap test/**/*.js",
+    "test": "npm run lint && npm run unit"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "semistandard": "^11.0.0",
+    "snazzy": "^7.0.0",
+    "tap": "^10.7.2"
+  },
+  "dependencies": {
+    "md5": "^2.2.1",
+    "split2": "^2.2.0"
+  }
+}
