@@ -1,12 +1,18 @@
 # diff-file
 [![js-semistandard-style](https://cdn.rawgit.com/flet/semistandard/master/badge.svg)](https://github.com/Flet/semistandard)
 
-Get linux file diff results
+Get linux file diff results. Format the result returned from Linux `diff <file1> <file2>`
+
+# Example
 
 ```js
 const fileDiff = require('diff-file');
 const getId = require('md5');
-const result = await fileDiff(path.join(__dirname, 'newfile.txt', path.join(__dirname, 'oldfile.txt')), getId);
+const result = await fileDiff(
+  path.join(__dirname, 'newfile.txt'),
+  path.join(__dirname, 'oldfile.txt'),
+  getId
+);
 
 /*
   result = {
